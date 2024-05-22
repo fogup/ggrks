@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #000;
+  overflow: hidden;
+}
+
+html {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100dvh;
+  background-color: #fff;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #bbb;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #222;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  translate: 0 -25%;
+}
+main img.ggrks_logo {
+  width: 250px;
+}
+main .search {
+  width: 50vw;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dfe1e5;
+  border-radius: 100px;
+  margin: 6px;
+  margin-top: 2rem;
+}
+main .search:hover, main .search:has(input:focus) {
+  border-color: transparent;
+  box-shadow: 0 1px 6px #aaa;
+}
+main .search svg {
+  width: 24px;
+  height: 24px;
+  fill: #9aa0a6;
+  padding: 10px;
+}
+main .search input {
+  width: calc(50vw - 132px);
+  height: 44px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+main nav.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 1rem;
+}
+main nav.btn button {
+  position: relative;
+  padding-inline: 0.7em;
+  height: 34px;
+  color: #3c4043;
+  background-color: #f8f9fa;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 14px;
+  z-index: 0;
+}
+main nav.btn button:hover {
+  color: #000;
+  border: 1px solid #dadce0;
+}
+
+p.made_url {
+  position: absolute;
+  left: 0;
+  bottom: 200px;
+  width: 100%;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  color: #00f;
+}
+
+p.made_url_point {
+  position: absolute;
+  left: 0;
+  bottom: 160px;
+  width: 100%;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  cursor: default;
+  color: #000;
+}
+
+p.respect {
+  display: block;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  bottom: 35px;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+}
+p.respect a {
+  color: #00f;
+}
+
+a.link {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  bottom: 0;
+  width: 80px;
+}
+a.link svg {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,40 @@
+* {
+  pointer-events: none;
+  cursor: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+p.respect {
+  bottom: 5px;
+}
+
+.cursor {
+  position: absolute;
+  left: 31%;
+  top: 47%;
+  width: 24px;
+  height: 24px;
+  z-index: 99;
+  animation: cursor 5s linear both;
+}
+.cursor img {
+  width: 24px;
+  height: 24px;
+}
+
+@keyframes cursor {
+  0% {
+    left: 10%;
+    top: -30px;
+  }
+  20% {
+    left: 31%;
+    top: 47%;
+  }
+  60% {
+    left: 31%;
+    top: 47%;
+  }
+}/*# sourceMappingURL=style.css.map */
